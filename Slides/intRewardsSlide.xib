@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="D-DIN-Bold.otf">
+            <string>D-DIN-Bold</string>
+        </array>
+        <array key="D-DIN.otf">
+            <string>D-DIN</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="DSu-hm-pu7" customClass="intRewardsSlide" customModule="Habits" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="345" height="400"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="Tdm-Um-mTe">
+                    <rect key="frame" x="0.0" y="0.0" width="345" height="400"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INTERMEDIATE REWARDS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="niz-Gd-7lN">
+                    <rect key="frame" x="33.5" y="20" width="278" height="26"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="26" id="ktm-Bl-I0q"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="D-DIN-Bold" family="D-DIN" pointSize="26"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intermediate Rewards are simple and easy to access." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KO9-F1-MMv">
+                    <rect key="frame" x="20" y="61" width="305" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Qxk-Ot-DCi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="D-DIN" family="D-DIN" pointSize="24"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your Intermediate Rewards below." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="nXt-tb-au7">
+                    <rect key="frame" x="15" y="121" width="315" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="a8K-zs-nou"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="D-DIN" family="D-DIN" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oZP-si-RiJ">
+                    <rect key="frame" x="20" y="156" width="305" height="35"/>
+                    <color key="backgroundColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="T5z-bK-gAa"/>
+                    </constraints>
+                    <color key="textColor" red="0.050980392159999999" green="0.29803921570000003" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HlO-ie-A0E">
+                    <rect key="frame" x="20" y="216" width="305" height="35"/>
+                    <color key="backgroundColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="GT6-m4-r5g"/>
+                    </constraints>
+                    <color key="textColor" red="0.050980392159999999" green="0.29803921570000003" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                </textField>
+                <pickerView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZpR-f6-LOe">
+                    <rect key="frame" x="20" y="241" width="305" height="110"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="110" id="qiZ-Wn-vJy"/>
+                    </constraints>
+                </pickerView>
+                <pickerView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QqD-78-eop">
+                    <rect key="frame" x="20" y="181" width="305" height="110"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="110" id="Vd9-Cd-ovu"/>
+                    </constraints>
+                </pickerView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="ZpR-f6-LOe" firstAttribute="trailing" secondItem="oZP-si-RiJ" secondAttribute="trailing" id="0w9-eX-nuL"/>
+                <constraint firstAttribute="trailing" secondItem="KO9-F1-MMv" secondAttribute="trailing" constant="20" id="95q-pQ-dpT"/>
+                <constraint firstItem="3TJ-F3-aZe" firstAttribute="trailing" secondItem="oZP-si-RiJ" secondAttribute="trailing" constant="20" id="9kO-z6-QV2"/>
+                <constraint firstItem="HlO-ie-A0E" firstAttribute="top" secondItem="oZP-si-RiJ" secondAttribute="bottom" constant="25" id="BcF-Kb-FHH"/>
+                <constraint firstItem="Tdm-Um-mTe" firstAttribute="bottom" secondItem="3TJ-F3-aZe" secondAttribute="bottom" id="CtE-uX-hht"/>
+                <constraint firstItem="QqD-78-eop" firstAttribute="trailing" secondItem="oZP-si-RiJ" secondAttribute="trailing" id="EJj-U1-qoy"/>
+                <constraint firstItem="HlO-ie-A0E" firstAttribute="trailing" secondItem="oZP-si-RiJ" secondAttribute="trailing" id="PJe-Th-J0J"/>
+                <constraint firstItem="ZpR-f6-LOe" firstAttribute="top" secondItem="HlO-ie-A0E" secondAttribute="bottom" constant="-10" id="RLG-Nm-yxC"/>
+                <constraint firstItem="oZP-si-RiJ" firstAttribute="leading" secondItem="3TJ-F3-aZe" secondAttribute="leading" constant="20" id="UYU-7p-O7L"/>
+                <constraint firstItem="nXt-tb-au7" firstAttribute="leading" secondItem="3TJ-F3-aZe" secondAttribute="leading" constant="15" id="V2B-gS-Fpu"/>
+                <constraint firstItem="Tdm-Um-mTe" firstAttribute="trailing" secondItem="3TJ-F3-aZe" secondAttribute="trailing" id="VgA-Qx-dSW"/>
+                <constraint firstItem="KO9-F1-MMv" firstAttribute="leading" secondItem="DSu-hm-pu7" secondAttribute="leading" constant="20" id="X6Q-8o-OTC"/>
+                <constraint firstItem="QqD-78-eop" firstAttribute="leading" secondItem="oZP-si-RiJ" secondAttribute="leading" id="Z5G-KK-dqC"/>
+                <constraint firstItem="niz-Gd-7lN" firstAttribute="centerX" secondItem="DSu-hm-pu7" secondAttribute="centerX" id="ZWw-CV-4qQ"/>
+                <constraint firstItem="Tdm-Um-mTe" firstAttribute="top" secondItem="3TJ-F3-aZe" secondAttribute="top" id="a4m-QC-N04"/>
+                <constraint firstItem="niz-Gd-7lN" firstAttribute="top" secondItem="3TJ-F3-aZe" secondAttribute="top" constant="20" id="aaB-4v-ihY"/>
+                <constraint firstItem="3TJ-F3-aZe" firstAttribute="trailing" secondItem="nXt-tb-au7" secondAttribute="trailing" constant="15" id="cUG-F3-RK8"/>
+                <constraint firstItem="nXt-tb-au7" firstAttribute="top" secondItem="KO9-F1-MMv" secondAttribute="bottom" constant="10" id="f64-q0-Kpw"/>
+                <constraint firstItem="Tdm-Um-mTe" firstAttribute="leading" secondItem="3TJ-F3-aZe" secondAttribute="leading" id="fim-0T-S5c"/>
+                <constraint firstItem="ZpR-f6-LOe" firstAttribute="leading" secondItem="oZP-si-RiJ" secondAttribute="leading" id="gRs-ai-fkv"/>
+                <constraint firstItem="oZP-si-RiJ" firstAttribute="top" secondItem="nXt-tb-au7" secondAttribute="bottom" constant="10" id="nVl-oi-6Ul"/>
+                <constraint firstItem="KO9-F1-MMv" firstAttribute="top" secondItem="niz-Gd-7lN" secondAttribute="bottom" constant="15" id="s1R-i2-e7q"/>
+                <constraint firstItem="HlO-ie-A0E" firstAttribute="leading" secondItem="oZP-si-RiJ" secondAttribute="leading" id="uRo-dF-epe"/>
+                <constraint firstItem="QqD-78-eop" firstAttribute="top" secondItem="oZP-si-RiJ" secondAttribute="bottom" constant="-10" id="wA9-iP-tvX"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="3TJ-F3-aZe"/>
+            <connections>
+                <outlet property="backgroundImg" destination="Tdm-Um-mTe" id="opG-21-Mr8"/>
+                <outlet property="intField1" destination="oZP-si-RiJ" id="c8A-pv-Oje"/>
+                <outlet property="intField2" destination="HlO-ie-A0E" id="UtP-H6-o5o"/>
+                <outlet property="intPicker1" destination="QqD-78-eop" id="qFi-eQ-Pyg"/>
+                <outlet property="intPicker2" destination="ZpR-f6-LOe" id="9wl-Je-7nN"/>
+            </connections>
+            <point key="canvasLocation" x="-5.5" y="158.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Background" width="1875" height="3335"/>
+    </resources>
+</document>

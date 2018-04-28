@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="D-DIN-Bold.otf">
+            <string>D-DIN-Bold</string>
+        </array>
+        <array key="D-DIN.otf">
+            <string>D-DIN</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="habitInfoVC" customModule="Habits" customModuleProvider="target">
+            <connections>
+                <outlet property="whenSlideXib" destination="v6E-oU-1cn" id="LzY-0j-QwM"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="v6E-oU-1cn" customClass="whenSlide" customModule="Habits" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="335" height="380"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="Izx-5D-BTW">
+                    <rect key="frame" x="0.0" y="0.0" width="335" height="380"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WHEN?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6d-f3-ahi">
+                    <rect key="frame" x="124.5" y="20" width="86" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="KOF-t7-hFy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="D-DIN-Bold" family="D-DIN" pointSize="28"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="When can you consistently code?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V11-UC-vgY">
+                    <rect key="frame" x="30" y="68" width="275" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="kHA-0K-l9G"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="D-DIN" family="D-DIN" pointSize="22"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="ihp-1n-HyI">
+                    <rect key="frame" x="20" y="123" width="295" height="147"/>
+                    <date key="date" timeIntervalSinceReferenceDate="544075831.20050502">
+                        <!--2018-03-30 04:10:31 +0000-->
+                    </date>
+                </datePicker>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="dBo-Hm-YEY" customClass="MultiSelectSegmentedControl">
+                    <rect key="frame" x="10" y="290" width="315" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="IQy-OU-O8z"/>
+                    </constraints>
+                    <segments>
+                        <segment title="Sat"/>
+                        <segment title="Sun"/>
+                        <segment title="Mon"/>
+                        <segment title="Tue"/>
+                        <segment title="Wed"/>
+                        <segment title="Thur"/>
+                        <segment title="Fri"/>
+                    </segments>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="segmentSelected:" destination="v6E-oU-1cn" eventType="valueChanged" id="UrF-EL-4kb"/>
+                    </connections>
+                </segmentedControl>
+            </subviews>
+            <constraints>
+                <constraint firstItem="ihp-1n-HyI" firstAttribute="leading" secondItem="0yZ-EF-vGg" secondAttribute="leading" constant="20" id="3fD-pe-W8R"/>
+                <constraint firstItem="Izx-5D-BTW" firstAttribute="leading" secondItem="0yZ-EF-vGg" secondAttribute="leading" id="3zT-Fl-kP2"/>
+                <constraint firstItem="Izx-5D-BTW" firstAttribute="bottom" secondItem="0yZ-EF-vGg" secondAttribute="bottom" id="8p4-F9-Sc5"/>
+                <constraint firstItem="m6d-f3-ahi" firstAttribute="top" secondItem="0yZ-EF-vGg" secondAttribute="top" constant="20" id="Kah-Nh-Py9"/>
+                <constraint firstItem="Izx-5D-BTW" firstAttribute="trailing" secondItem="0yZ-EF-vGg" secondAttribute="trailing" id="Ksy-w4-uDu"/>
+                <constraint firstItem="dBo-Hm-YEY" firstAttribute="leading" secondItem="v6E-oU-1cn" secondAttribute="leading" constant="10" id="MvZ-nf-H15"/>
+                <constraint firstItem="V11-UC-vgY" firstAttribute="leading" secondItem="v6E-oU-1cn" secondAttribute="leading" constant="30" id="RKL-vS-32S"/>
+                <constraint firstItem="V11-UC-vgY" firstAttribute="top" secondItem="m6d-f3-ahi" secondAttribute="bottom" constant="20" id="Xzp-QZ-1Lq"/>
+                <constraint firstItem="0yZ-EF-vGg" firstAttribute="bottom" secondItem="dBo-Hm-YEY" secondAttribute="bottom" constant="60" id="YSh-3E-kQs"/>
+                <constraint firstAttribute="trailing" secondItem="ihp-1n-HyI" secondAttribute="trailing" constant="20" id="cIR-hQ-Zem"/>
+                <constraint firstItem="dBo-Hm-YEY" firstAttribute="top" secondItem="ihp-1n-HyI" secondAttribute="bottom" constant="20" id="ceM-Iz-m0N"/>
+                <constraint firstItem="m6d-f3-ahi" firstAttribute="centerX" secondItem="v6E-oU-1cn" secondAttribute="centerX" id="nuW-wF-pWb"/>
+                <constraint firstAttribute="trailing" secondItem="dBo-Hm-YEY" secondAttribute="trailing" constant="10" id="snN-8L-Lsz"/>
+                <constraint firstItem="ihp-1n-HyI" firstAttribute="top" secondItem="V11-UC-vgY" secondAttribute="bottom" constant="10" id="tXr-mB-UkK"/>
+                <constraint firstAttribute="trailing" secondItem="V11-UC-vgY" secondAttribute="trailing" constant="30" id="vqh-tc-LzI"/>
+                <constraint firstItem="Izx-5D-BTW" firstAttribute="top" secondItem="0yZ-EF-vGg" secondAttribute="top" id="xxo-kg-dZy"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="0yZ-EF-vGg"/>
+            <connections>
+                <outlet property="backgroundImg" destination="Izx-5D-BTW" id="gDg-zT-xkp"/>
+                <outlet property="questionLabel" destination="V11-UC-vgY" id="E4m-PB-4S4"/>
+                <outlet property="segmentedControl" destination="dBo-Hm-YEY" id="7Ev-Z0-R4R"/>
+                <outlet property="timePicker" destination="ihp-1n-HyI" id="y2Z-2o-0qx"/>
+            </connections>
+            <point key="canvasLocation" x="-20" y="154"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Background" width="1875" height="3335"/>
+    </resources>
+</document>
